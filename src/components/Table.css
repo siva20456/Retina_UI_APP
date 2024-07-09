@@ -1,0 +1,117 @@
+/* 
+.table-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.table-fixed {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.table-scrollable {
+  display: inline-block;
+  overflow-x: auto;
+  vertical-align: top;
+}
+
+.table-scrollable table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-scrollable th, .table-scrollable td {
+  white-space: nowrap;
+}
+
+
+.table-scrollable::-webkit-scrollbar {
+  display: none;
+}
+.table-scrollable {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+  */
+
+/* src/App.css */
+.table-container {
+  display: flex;
+}
+
+.table-fixed, .table-scrollable {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.table-fixed {
+  flex-shrink: 0;
+}
+
+.table-scrollable {
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+}
+
+.table-scrollable table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-scrollable th, .table-scrollable td {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.table-scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.table-scrollable {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+thead {
+  display: contents;
+}
+
+tbody {
+  display: contents;
+}
+
+
+.table-container td {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 16px; 
+  text-align: center;
+  background-color: #fff;
+}
+
+.table-container td:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.add-btn {
+  display: inline-flex;
+  align-items: center; 
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #000; 
+  border-radius: 50%;
+  font-size: 24px;
+  color: #000; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.add-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
