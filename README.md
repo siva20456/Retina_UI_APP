@@ -10,16 +10,10 @@ This project is a React-based UI application that showcases a dynamic table wher
 - **Scrollable Variants**: If the number of variants exceeds four, a horizontal scroll is enabled while keeping the product filter column fixed.
 - **Colorful Text**: Display each word of a given text in a different strong color.
 
-## Demo
 
-A demo of the application is available [here](#).
-
-## Installation
-
-Follow these steps to set up and run the project locally:
 
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- npm (v6 or higher) or yarn (v1.22 or higher)
+- npm (v6 or higher) 
 
